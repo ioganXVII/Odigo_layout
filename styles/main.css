@@ -1,0 +1,138 @@
+@import "../node_modules/normalize.css/normalize.css";
+body {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #102746;
+}
+
+.wrapper {
+  max-width: 1062px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 56px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header .header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .header__wrapper .header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header .header__wrapper .header__list .header__item {
+  list-style: none;
+}
+
+.header .header__wrapper .header__list a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .header__wrapper .header__list a:hover, .header .header__wrapper .header__list a:focus {
+  opacity: 0.5;
+  transition: opacity 0.4s;
+}
+
+.header .header__wrapper .header__list .header__item:not(.header__item:last-child) {
+  margin-right: 82px;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, rgba(53, 66, 103, 0.0001), #151824), url("../images/hero_background.png") no-repeat;
+  background-size: cover;
+}
+
+.hero .hero__wrapper {
+  padding-top: 263px;
+}
+
+.hero .hero__title {
+  max-width: 619px;
+  font-size: 50px;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 22px;
+}
+
+.hero .hero__subtitle {
+  max-width: 546px;
+  font-weight: normal;
+  font-style: 16px;
+  line-height: 24px;
+  color: white;
+  margin-bottom: 59px;
+}
+
+.hero .search-form .search-form__wrapper {
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero .search-form .search-form__wrapper .search-form__field {
+  display: inline-block;
+  border-bottom: 2px solid #BFC0C5;
+  width: 297px;
+  padding-bottom: 23px;
+  margin-right: 61px;
+}
+
+.hero .search-form .search-form__wrapper .search-form__field .search-form__input {
+  background: none;
+  border: 0;
+  margin-left: 43px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  width: 84%;
+}
+
+.hero .search-form .search-form__wrapper .search-form__field .search-form__input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.hero .search-form .search-form__wrapper .search-form__field::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: absolute;
+}
+
+.hero .search-form .search-form__wrapper .search-form__submit {
+  background: #1B7DFF;
+  padding: 15px 39px;
+  border: 0;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+}
+
+.hero .search-form .search-form__wrapper .search-form__submit:hover, .hero .search-form .search-form__wrapper .search-form__submit:focus {
+  background-color: #1969d3;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.benefits__wrapper {
+  background-color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+/*# sourceMappingURL=main.css.map */
