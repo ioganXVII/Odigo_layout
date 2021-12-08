@@ -13,17 +13,61 @@ body {
   margin: 0 auto;
 }
 
+.wrapper-lg {
+  max-width: 1264px;
+  margin: 0 auto;
+}
+
+.section-title, .Inspired__title {
+  font-size: 35px;
+  line-height: 42px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.section-title::after, .Inspired__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 253px;
+  height: 3px;
+  background-color: #006DFE;
+}
+
+.arrow-right-long {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background-color: #0074d9;
+}
+
+.arrow-right-long::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  right: -5px;
+  border: 5px solid #ffffff;
+  border-right-width: 0;
+  border-left-color: #0074d9;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
 .header {
   padding-top: 56px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 10;
 }
 
 .header .header__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header .header__wrapper .header__list {
@@ -53,6 +97,7 @@ body {
   min-height: 100vh;
   background: linear-gradient(to bottom, rgba(53, 66, 103, 0.0001), #151824), url("../images/hero_background.png") no-repeat;
   background-size: cover;
+  padding-bottom: 223px;
 }
 
 .hero .hero__wrapper {
@@ -135,8 +180,6 @@ body {
 
 .benefits .benefits__wrapper {
   background-color: white;
-  max-width: 1262px;
-  margin: 0 auto;
   box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
   position: relative;
 }
@@ -166,23 +209,23 @@ body {
   margin-bottom: 112px;
 }
 
-.benefits .benefits__wrapper .benefits__sections .benefits__card .benefits__card-icon {
+.benefits .benefits__wrapper .benefits__sections .benefits__card-icon {
   margin-bottom: 37px;
 }
 
-.benefits .benefits__wrapper .benefits__sections .benefits__card .benefits__card-title {
+.benefits .benefits__wrapper .benefits__sections .benefits__card-title {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 20px;
 }
 
-.benefits .benefits__wrapper .benefits__sections .benefits__card .benefits__card-description {
+.benefits .benefits__wrapper .benefits__sections .benefits__card-description {
   margin-bottom: 39px;
   line-height: 24px;
 }
 
-.benefits .benefits__wrapper .benefits__sections .benefits__card .benefits__card-more {
+.benefits .benefits__wrapper .benefits__sections .benefits__card-more {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -191,23 +234,131 @@ body {
   text-decoration: none;
 }
 
-.benefits .benefits__wrapper .benefits__sections .benefits__card .benefits__card-more .arrow-right-long {
-  position: relative;
-  width: 30px;
-  height: 2px;
-  background-color: #0074d9;
+.Inspired {
+  padding-bottom: 131px;
 }
 
-.benefits .benefits__wrapper .benefits__sections .benefits__card .benefits__card-more .arrow-right-long::after {
-  position: absolute;
+.Inspired__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.Inspired__title {
+  margin-right: 15px;
+}
+
+.Inspired__view-all {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #006DFE;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.Inspired .Inspired__cards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+}
+
+.Inspired .Inspired__cards .Inspired__card {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.Inspired .Inspired__cards .Inspired__card::after {
+  display: block;
   content: "";
-  top: -4px;
-  right: -5px;
-  border: 5px solid #ffffff;
-  border-right-width: 0;
-  border-left-color: #0074d9;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(21, 24, 36, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.Inspired .Inspired__cards .Inspired__card_size_lg {
+  grid-column: span 3;
+}
+
+.Inspired .Inspired__cards .Inspired__card_size_sm {
+  grid-column: span 2;
+}
+
+.Inspired .Inspired__cards .Inspired__card-image {
+  transform: scale(1.2);
+  object-fit: cover;
+}
+
+.Inspired .Inspired__cards .Inspired__card-image_size_lg {
+  height: 354px;
+}
+
+.Inspired .Inspired__cards .Inspired__card-image_size_sm {
+  height: 283px;
+}
+
+.Inspired .Inspired__cards .Inspired__card-caption {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  left: 29px;
+  bottom: 27px;
+  z-index: 3;
+}
+
+.Inspired .Inspired__cards .Inspired__card-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+
+.Featured {
+  margin-bottom: 139px;
+}
+
+.Featured__info {
+  padding-left: 84px;
+}
+
+.Featured__tour {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 108px;
+  align-items: center;
+  margin-bottom: 77px;
+}
+
+.Featured__title {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 500;
+  margin-bottom: 85px;
+}
+
+.Featured__description {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 58px;
+}
+
+.Featured__link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #006DFE;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

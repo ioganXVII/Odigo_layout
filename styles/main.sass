@@ -2,6 +2,7 @@
 // Colors variables
 $white: white
 $dark-blue: #102746
+$medium-blue: #006DFE
 
 body
     font-family: Lato, sans-serif
@@ -14,7 +15,40 @@ body
 .wrapper
     max-width: 1062px
     margin: 0 auto
+.wrapper-lg
+    max-width: 1264px
+    margin: 0 auto
 
+.section-title
+    font-size: 35px
+    line-height: 42px
+    position: relative
+    padding-bottom: 10px
+    &::after
+        content: ""
+        display: block
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 253px
+        height: 3px
+        background-color: $medium-blue
+
+.arrow-right-long 
+    position: relative
+    width: 30px
+    height: 2px
+    background-color: #0074d9
+.arrow-right-long::after 
+    position: absolute
+    content: ""
+    top: -4px
+    right: -5px
+    border: 5px solid #ffffff
+    border-right-width: 0
+    border-left-color: #0074d9
+    border-top-color: transparent
+    border-bottom-color: transparent
 
 // Header
 
@@ -24,9 +58,11 @@ body
     top: 0
     left: 0
     width: 100%
+    z-index: 10
     .header__wrapper
         display: flex
         justify-content: space-between
+        align-items: center
         .header__list
             display: flex
             flex-wrap: wrap
@@ -46,7 +82,7 @@ body
     min-height: 100vh
     background: linear-gradient(to bottom, rgba(53, 66, 103, 0.01%), rgba(21,24,36, 100%)), url("../images/hero_background.png") no-repeat
     background-size: cover
-
+    padding-bottom: 223px
     .hero__wrapper
         padding-top: 263px
 
@@ -118,8 +154,6 @@ body
     padding-bottom: 133px
     .benefits__wrapper
         background-color: $white
-        max-width: 1262px
-        margin: 0 auto
         box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993)
         position: relative
         .benefits__title
@@ -141,51 +175,120 @@ body
             .benefits__card
                 grid-column: span 1
                 margin-bottom: 112px
-                .benefits__card-icon
+                &-icon
                     margin-bottom: 37px
-                .benefits__card-title
+                &-title
                     font-weight: 500
                     font-size: 18px
                     line-height: 24px
                     margin-bottom: 20px
-                .benefits__card-description
+                &-description
                     margin-bottom: 39px
                     line-height: 24px
-                .benefits__card-more
+                &-more
                     display: flex
                     align-items: center
                     gap: 15px
-                    color: #006DFE
+                    color: $medium-blue
                     text-transform: uppercase
                     text-decoration: none
-                    .arrow-right-long 
-                        position: relative
-                        width: 30px
-                        height: 2px
-                        background-color: #0074d9
-                    .arrow-right-long::after 
-                        position: absolute
-                        content: ""
-                        top: -4px
-                        right: -5px
-                        border: 5px solid #ffffff
-                        border-right-width: 0
-                        border-left-color: #0074d9
-                        border-top-color: transparent
-                        border-bottom-color: transparent
+                    
                     
 
-
-
-
-
-
-
-
 // Inspired
-
-
+.Inspired
+    padding-bottom: 131px
+    &__caption
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap
+        margin-bottom: 36px
+    &__title
+        @extend .section-title
+        margin-right: 15px
+    &__view-all
+        text-transform: uppercase
+        text-decoration: none
+        color:$medium-blue
+        display: flex
+        align-items: center
+        gap: 15px
+    
+    .Inspired__cards
+        display: grid
+        grid-template-columns:  repeat(6, 1fr)
+        grid-gap: 10px
+        .Inspired__card
+            margin: 0
+            position: relative
+            overflow: hidden
+            &::after
+                display: block
+                content: ""
+                width: 100%
+                height: 100%
+                background-color: rgba(21, 24, 36, 0.4)
+                position: absolute
+                top: 0
+                left: 0
+                z-index: 2
+            &_size_lg
+                grid-column: span 3
+            &_size_sm
+                grid-column: span 2
+            &-image
+                transform: scale(1.2)
+                object-fit: cover
+            &-image_size_lg
+                height: 354px
+            &-image_size_sm
+                height: 283px
+            &-caption
+                font-size: 50px
+                font-weight: bold
+                color: $white
+                position: absolute
+                left: 29px
+                bottom: 27px
+                z-index: 3
+            &-link
+                position: absolute
+                top: 0
+                left: 0
+                height: 100%
+                width: 100%
+                z-index: 4
 // Featured
+.Featured
+    margin-bottom: 139px
+    &__info
+        padding-left: 84px
+    &__tour
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 0 108px
+        align-items: center
+        margin-bottom: 77px
+    &__title
+        font-size: 30px
+        line-height: 40px
+        font-weight: 500
+        margin-bottom: 85px
+    &__description
+        font-size: 16px
+        line-height: 24px
+        margin-bottom: 58px
+    &__link
+        display: flex
+        align-items: center
+        gap: 15px
+        color: $medium-blue
+        text-transform: uppercase
+        text-decoration: none
+
+
+
 
 // Places
 
