@@ -114,8 +114,72 @@ body
 
 
 // Benefits
-.benefits__wrapper
-    background-color: $white
+.benefits
+    padding-bottom: 133px
+    .benefits__wrapper
+        background-color: $white
+        max-width: 1262px
+        margin: 0 auto
+        box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993)
+        position: relative
+        .benefits__title
+            width: 1062px
+            font-weight: 500
+            font-size: 35px
+            line-height: 42px
+            padding: 93px 100px 88px 100px
+            position: absolute
+            top: 0
+            left: 0
+            transform: translateY(-100%)
+            background-color: $white
+        .benefits__sections
+            display: grid
+            grid-template-columns:  repeat(3, 1fr)
+            grid-column-gap: 55px
+            padding: 25px 100px
+            .benefits__card
+                grid-column: span 1
+                margin-bottom: 112px
+                .benefits__card-icon
+                    margin-bottom: 37px
+                .benefits__card-title
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 24px
+                    margin-bottom: 20px
+                .benefits__card-description
+                    margin-bottom: 39px
+                    line-height: 24px
+                .benefits__card-more
+                    display: flex
+                    align-items: center
+                    gap: 15px
+                    color: #006DFE
+                    text-transform: uppercase
+                    text-decoration: none
+                    .arrow-right-long 
+                        position: relative
+                        width: 30px
+                        height: 2px
+                        background-color: #0074d9
+                    .arrow-right-long::after 
+                        position: absolute
+                        content: ""
+                        top: -4px
+                        right: -5px
+                        border: 5px solid #ffffff
+                        border-right-width: 0
+                        border-left-color: #0074d9
+                        border-top-color: transparent
+                        border-bottom-color: transparent
+                    
+
+
+
+
+
+
 
 
 // Inspired
