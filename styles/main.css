@@ -726,8 +726,8 @@ body {
     padding-bottom: 12px;
   }
 
-  .search-form__input::placeholder {
-    font-size: 12px;
+  .hero .search-form__wrapper .search-form__field .search-form__input::placeholder {
+    font-size: 13px;
   }
 
   .search-form .search-form__wrapper .search-form__submit {
