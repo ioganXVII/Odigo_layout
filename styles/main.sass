@@ -287,11 +287,61 @@ body
         text-transform: uppercase
         text-decoration: none
 
-
-
-
 // Places
+.Places
+    margin-bottom: 86px
+    &__cards
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 57px
+    &__card
+        width: 386px
+        display: flex
+        flex-direction: column
+        &-image
+            position: relative
+            margin-bottom: 45px
+        &-title
+            color: $white
+            display: flex
+            justify-content: space-around
+            align-items: center
+            position: absolute
+            width: 100%
+            bottom: 0
+            left: 0
+            background-color: rgba(21, 24, 36, 0.6)
+        &-name
+            font-size: 18px
+            line-height: 24px
+            font-weight: 500
+            text-transform: uppercase
+        &-like
+            padding-right: 23px
+            margin-right: 13px
+            background: url("../images/Likes.svg") no-repeat right center
+        &-comment
+            padding-right: 23px
+            background: url("../images/Comment.svg") no-repeat right center
+        &-description
+            font-weight: 400
+            margin-bottom: 31px
+        &-more
+            margin: auto 0 0 0
+            width: 118px
+            text-decoration: none
+            background: $medium-blue
+            padding: 12px 19px
+            border: 0
+            font-size: 16px
+            font-weight: 500
+            line-height: 19,2px
+            text-transform: uppercase
+            color: $white
 
+            &:hover, &:focus
+                background-color: #1969d3
+                transition: background-color 0.3s ease-in-out
 
 // Video
 
