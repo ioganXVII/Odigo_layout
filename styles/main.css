@@ -61,6 +61,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  transition: 0.2s linear;
+  padding-bottom: 20px;
   z-index: 10;
 }
 
@@ -93,6 +95,10 @@ body {
   margin-right: 82px;
 }
 
+.header_active {
+  background-color: rgba(14, 29, 40, 0.85);
+}
+
 .hero {
   min-height: 100vh;
   background: linear-gradient(to bottom, rgba(53, 66, 103, 0.0001), #151824), url("../images/hero_background.png") no-repeat;
@@ -100,11 +106,11 @@ body {
   padding-bottom: 223px;
 }
 
-.hero .hero__wrapper {
+.hero__wrapper {
   padding-top: 263px;
 }
 
-.hero .hero__title {
+.hero__title {
   max-width: 619px;
   font-size: 50px;
   font-weight: 500;
@@ -112,7 +118,7 @@ body {
   margin-bottom: 22px;
 }
 
-.hero .hero__subtitle {
+.hero__subtitle {
   max-width: 546px;
   font-weight: normal;
   font-style: 16px;
@@ -121,13 +127,13 @@ body {
   margin-bottom: 59px;
 }
 
-.hero .search-form .search-form__wrapper {
+.hero .search-form__wrapper {
   border: 0;
   display: flex;
   flex-wrap: wrap;
 }
 
-.hero .search-form .search-form__wrapper .search-form__field {
+.hero .search-form__wrapper .search-form__field {
   display: inline-block;
   border-bottom: 2px solid #BFC0C5;
   width: 297px;
@@ -135,7 +141,7 @@ body {
   margin-right: 61px;
 }
 
-.hero .search-form .search-form__wrapper .search-form__field .search-form__input {
+.hero .search-form__wrapper .search-form__field .search-form__input {
   background: none;
   border: 0;
   margin-left: 43px;
@@ -145,12 +151,12 @@ body {
   width: 84%;
 }
 
-.hero .search-form .search-form__wrapper .search-form__field .search-form__input::placeholder {
+.hero .search-form__wrapper .search-form__field .search-form__input::placeholder {
   color: white;
   opacity: 1;
 }
 
-.hero .search-form .search-form__wrapper .search-form__field::before {
+.hero .search-form__wrapper .search-form__field::before {
   content: "";
   height: 20px;
   width: 20px;
@@ -159,7 +165,7 @@ body {
   position: absolute;
 }
 
-.hero .search-form .search-form__wrapper .search-form__submit {
+.hero .search-form__wrapper .search-form__submit {
   background: #1B7DFF;
   padding: 15px 39px;
   border: 0;
@@ -169,7 +175,7 @@ body {
   color: white;
 }
 
-.hero .search-form .search-form__wrapper .search-form__submit:hover, .hero .search-form .search-form__wrapper .search-form__submit:focus {
+.hero .search-form__wrapper .search-form__submit:hover, .hero .search-form__wrapper .search-form__submit:focus {
   background-color: #1969d3;
   transition: background-color 0.3s ease-in-out;
 }
@@ -434,6 +440,28 @@ body {
 .Places__card-more:hover, .Places__card-more:focus {
   background-color: #1969d3;
   transition: background-color 0.3s ease-in-out;
+}
+
+.Videos {
+  width: 100%;
+}
+
+.Videos__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.Videos__item {
+  padding-top: 56.25%;
+}
+
+.Videos__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
