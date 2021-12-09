@@ -464,6 +464,48 @@ body {
   height: 100%;
 }
 
+.footer {
+  background-color: #0E1D28;
+  padding: 119px 0;
+}
+
+.footer__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__logo {
+  width: 50%;
+}
+
+.footer__nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__menu-item {
+  list-style: none;
+}
+
+.footer__menu-title {
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  line-height: 24px;
+  margin: 0;
+}
+
+.footer__menu-link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__menu-link:active, .footer__menu-link:hover, .footer__menu-link:active {
+  opacity: 0.5;
+}
+
 /*# sourceMappingURL=main.css.map */
 
 /*# sourceMappingURL=main.css.map */
