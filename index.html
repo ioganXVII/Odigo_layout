@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <title>Document</title>
+    <title>Odigo</title>
 </head>
 <body>
     <!-- Header -->
@@ -21,16 +21,16 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#" class="header__link">Articles</a>
+                            <a href="#articles" class="header__link js-scroll">Articles</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Locations</a>
+                            <a href="#locations" class="header__link js-scroll">Locations</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Videos</a>
+                            <a href="#videos" class="header__link js-scroll">Videos</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Sign in</a>
+                            <a href="#sign-in" class="header__link js-scroll">Sign in</a>
                         </li>
                     </ul>
                     <div class="header__nav-close">
@@ -50,7 +50,7 @@
     <!-- Content -->
     <main>
         <!-- Hero -->
-        <section class="hero">
+        <section class="hero" id="sign-in">
             <div class="wrapper">
                 <div class="hero__wrapper">
                     <h1 class="hero__title">
@@ -160,7 +160,7 @@
         </section>
 
         <!-- Featured -->
-        <section class="Featured">
+        <section class="Featured" id="articles">
             <div class="wrapper-lg">
                 <div class="Featured__tour">
                     <div class="Featured__image">
@@ -187,7 +187,7 @@
         </section>
 
         <!-- Places -->
-        <section class="Places">
+        <section class="Places" id="locations">
             <div class="wrapper-lg">
                 <h1 class="Places__title section-title">Today top places to visit</h1>
                 <div class="Places__cards">
@@ -304,7 +304,7 @@
         </section>
 
         <!-- Videos -->
-        <section class="Videos">
+        <section class="Videos" id="videos">
             <div class="Videos__wrapper">
                 <div class="Videos__item"></div>
                 <iframe class="Videos__element" src="https://www.youtube.com/embed/fjs_aTykcw0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
